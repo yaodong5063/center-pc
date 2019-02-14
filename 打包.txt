@@ -1,0 +1,13 @@
+gulpfile为gulp的配置，主要用来打包图片，页面和css，作为最终输出生成环境使用
+webpack.cofig.js为webpack的配置,主要用来打包和压缩js,vue用
+
+npm run rev  --起webpack.dev.server服务，可以按照自己需求配置，主要作为开发环境调试js使用，css修改需要手动刷新页面.
+npm run serve --"browsersync服务器，可以验证dist打包后的代码
+
+npm run dev  --打包到dist文件夹，作为生产环境代码直接复制上传
+
+npm run build --webpack打包，js打包出错时可以作为调试，定位js打包错误
+
+打包出错时
+我们可以通过重建 node-sass 来解决，执行以下命令
+npm rebuild node-sass
